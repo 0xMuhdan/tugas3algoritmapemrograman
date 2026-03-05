@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Calculator Premium</title>
+    <!-- Tambahkan Favicon Logo Kalkulator (Menggunakan Emoji SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧮</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="static/css/style.css"
+    />
+    <!-- Phosphor Icons for beautiful icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="background-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+      <header class="header">
+        <h1 class="gradient-text"><i class="ph ph-calculator"></i> Kalkulator Geometri</h1>
+        <p>Hitung dimensi Silinder dan Kerucut dengan presisi</p>
+        <p>Nama : Muhdan Firdaus Salam</p>
+        <p>NIM : 2510614067</p>
+        <p>Untuk menyelesaikan Tugas 3 - Core Basic, Input Output, Functions</p>
+      </header>
+
+      <main class="calculator-glass">
+        <div class="tabs">
+          <button class="tab-btn active" data-shape="silinder">
+            <i class="ph ph-cylinder"></i> Silinder
+          </button>
+          <button class="tab-btn" data-shape="kerucut">
+            <i class="ph ph-cone"></i> Kerucut
+          </button>
+        </div>
+
+        <form id="calc-form" class="calc-form">
+          <input type="hidden" id="shape-type" value="silinder" />
+
+          <div class="input-group">
+            <label for="radius">Jari-Jari (r)</label>
+            <div class="input-wrapper">
+              <i class="ph ph-circle-notch"></i>
+              <input
+                type="number"
+                id="radius"
+                placeholder="Masukkan jari-jari"
+                step="0.01"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="height">Tinggi (t)</label>
+            <div class="input-wrapper">
+              <i class="ph ph-arrows-out-line-vertical"></i>
+              <input
+                type="number"
+                id="height"
+                placeholder="Masukkan tinggi"
+                step="0.01"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn-calculate">
+            <span>Hitung Sekarang</span>
+            <i class="ph ph-magic-wand"></i>
+          </button>
+        </form>
+
+        <div id="loading" class="loading hidden">
+          <div class="spinner"></div>
+          <p>Menghitung...</p>
+        </div>
+
+        <div id="error-message" class="error-message hidden">
+          <i class="ph ph-warning-circle"></i>
+          <span id="error-text">Terjadi kesalahan</span>
+        </div>
+
+        <div id="results" class="results glass-panel hidden">
+          <h3>Hasil Perhitungan</h3>
+          <div class="result-grid">
+            <div class="result-card">
+              <div class="result-icon blue"><i class="ph ph-circle"></i></div>
+              <div class="result-info">
+                <span class="result-label">Keliling Alas</span>
+                <span class="result-value" id="res-keliling">0.00</span>
+              </div>
+            </div>
+            <div class="result-card">
+              <div class="result-icon purple"><i class="ph ph-square"></i></div>
+              <div class="result-info">
+                <span class="result-label">Luas Permukaan</span>
+                <span class="result-value" id="res-luas">0.00</span>
+              </div>
+            </div>
+            <div class="result-card">
+              <div class="result-icon pink"><i class="ph ph-cube"></i></div>
+              <div class="result-info">
+                <span class="result-label">Volume</span>
+                <span class="result-value" id="res-volume">0.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
