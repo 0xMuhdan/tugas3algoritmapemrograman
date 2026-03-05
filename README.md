@@ -1,5 +1,7 @@
 # Kalkulator Geometri - Web Algo Python
 
+> 🚀 **Live Demo:** [https://tugaskalkulatormuhdan.netlify.app/](https://tugaskalkulatormuhdan.netlify.app/)
+
 Sebuah aplikasi web kalkulator yang dikembangkan untuk menghitung dimensi Silinder dan Kerucut (Keliling, Luas Permukaan, dan Volume) dengan mudah dan presisi.
 
 Aplikasi ini dibangun untuk mengimplementasikan fundamental **Core Basic, Input Output, dan Functions** (awalnya dibangun dengan Python, lalu di-porting ke Vanilla JavaScript untuk kebutuhan hosting Netlify), dibalut dengan antarmuka web modern yang estetik menggunakan pendekatan _Glassmorphism_.
@@ -12,18 +14,6 @@ Aplikasi ini dibangun untuk mengimplementasikan fundamental **Core Basic, Input 
 4. **Animasi Angka**: Transisi angka perhitungan yang responsif dan sangat mulus (60FPS).
 5. **UI Premium Glassmorphism**: Desain antarmuka semi-transparan dengan efek visual animasi bola warna (_gradient orbs_) di latar belakang.
 6. **100% Static Web Ready**: Sistem backend Python sudah dipindahkan sepenuhnya ke _Frontend_ JS, sehingga aplikasi dapat berjalan langsung di browser tanpa server khusus (Support GitHub Pages, Netlify, Vercel).
-
-## 🛠 Instalasi dan Penggunaan
-
-Karena aplikasi ini sekarang bersifat 100% statis (HTML, CSS, JS), Anda tidak perlu menginstal environment Python, server Flask, atau pustaka tambahan apa pun untuk menjalankannya.
-
-1. **Menjalankan Secara Lokal di Komputer**:
-   Cukup klik dua kali (buka) file `index.html` menggunakan browser standar apa pun (Chrome, Edge, Firefox, Safari). Aplikasi akan langsung terbuka dan 100% fungsional tanpa koneksi internet atau server backend.
-
-2. **Deploy as Public Web (Netlify / hosting statis lainnya):**
-   Cukup seret (_drag & drop_) seluruh folder proyek ini ke dalam dashboard Netlify Anda. Sistem otomatis mengenali file `index.html` utama.
-
-_Catatan: File asli kode Python backend ada di dalam `/python_backup` sebagai bukti implementasi Logika & Algoritma, namun web ini menggunakan jembatan bahasa JS agar bisa online di Netlify._
 
 ## 📂 Struktur Project
 
